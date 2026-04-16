@@ -13,13 +13,15 @@ public class Question04_2 {
 	public static void main(String[] args) throws IOException {
 
 		int[] ageGroup = { 23, 33, 26, 21, 25, 22 };
+		System.out.println("4番目の人の年齢を入力してください。");
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
 		int temporaryAge = Integer.parseInt(reader.readLine());
 
 		ageGroup[3] = temporaryAge;
-		System.out.println(ageGroup[3]);
-		System.out.println(ageGroup.length);
+		System.out.println("4番目の人の年齢は" + ageGroup[3] + "歳です。");
+		System.out.println("人数は" + ageGroup.length + "人です。");
+
 	}
 
 }
