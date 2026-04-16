@@ -11,9 +11,16 @@ import java.io.InputStreamReader;
 public class Question05_1 {
 
 	public static void main(String[] args) throws IOException {
+		System.out.println("年齢を入力してください");
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		int age = Integer.parseInt(reader.readLine());
-		System.out.println(age);
+
+		if (age < 20) {
+			System.out.println("20歳未満なので、お酒の提供ができません。");
+
+		} else {
+			System.out.println("20歳以上なので、お酒を提供することが可能です。");
+		}
 
 	}
 }
